@@ -1,0 +1,20 @@
+{
+    "password": "password",
+    "cookie_secret": "secret",
+    "api_secret": "secret",
+    "structure": {
+        "storage": "centrifuge.structure.postgresql.Storage",
+        "update_interval": 60,
+        "settings": {
+            "url": "$DATABASE_URL"
+        }
+    },
+    "state": {
+        "storage": "centrifuge.state.redis.State",
+        "settings": {
+            "host": "<redis host>",
+            "port": <redis port>,
+            "password": "<redis password>"
+        }
+    }
+}
